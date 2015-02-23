@@ -137,21 +137,22 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>08:00</td>  <td>Coffee/Setup</td> </tr>
+      <tr> <td>8:30</td> <td>Introduction</td> </tr>
+      <tr> <td>9:00</td>  <td>Meet the Shell</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch</td> </tr>
+      <tr> <td>1:30</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>13:00</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>08:00</td>  <td>Coffee</td> </tr>
+      <tr> <td>8:30</td>  <td>Intro to R</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch</td> </tr>
+      <tr> <td>13:30</td>  <td>More R</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -212,6 +213,7 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
       <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
     </ul>
   </div>
+    <!--
   <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
@@ -225,7 +227,8 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
+	-->
+
   <div class="col-md-6">
     <h3>Programming in R</h3>
     <ul>
@@ -237,7 +240,7 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
       <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
     </ul>
   </div>
-  -->
+
 </div>
 
 <div class="row">
@@ -255,6 +258,9 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
       <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
     </ul>
   </div>
+  </div>
+
+  <!--
   <div class="col-md-6">
     <h3>Managing Data with SQL</h3>
     <ul>
@@ -270,7 +276,7 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
     </ul>
   </div>
 </div>
-
+-->
 <hr/>
 
 <!--
@@ -443,90 +449,6 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
   </div>
 </div> <!-- End of 'Git' section. -->
 
-<div> <!-- Start of 'Python' section. -->
-  <h3>Python</h3>
-
-  <p>
-    <a href="http://python.org">Python</a> is a popular language for
-    scientific computing, and great for general-purpose programming as
-    well.  Installing all of its scientific packages individually can be
-    a bit difficult, so we recommend an all-in-one installer.
-  </p>
-
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 2.x and not version 3.x</strong>
-      (e.g., 2.7 is fine but not 3.4).
-      Python 3 introduced changes that will break some of the code we teach during the workshop.
-    </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <ul>
-	<li>
-          Download and
-          install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
-	</li>
-	<li>
-          Download the default Python 2 installer (do not follow the link to version 3).
-	  Use all of the defaults for installation
-          <em>except</em> make sure to check
-	  <strong>Make Anaconda the default Python</strong>.
-	</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <ul>
-	<li>
-          Download and
-          install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>.
-	</li>
-	<li>
-          Download the default Python 2 installer (do not follow the link to version 3).
-	  Use all of the defaults for installation.
-	</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	We recommend the all-in-one scientific Python installer
-	<a href="http://continuum.io/downloads.html">Anaconda</a>.
-	(Installation requires using the shell and if you aren't
-	comfortable doing the installation yourself just
-	download the installer and we'll help you at the boot
-	camp.)
-      </p>
-      <ol>
-	<li>
-          Download the installer that matches your operating
-          system and save it in your home folder.
-	  Download the default Python 2 installer (do not follow the link to version 3). 
-	</li>
-	<li>
-          Open a terminal window.
-	</li>
-	<li>
-          Type <pre>bash Anaconda-</pre> and then press
-          tab. The name of the file you just downloaded should
-          appear.
-	</li>
-	<li>
-          Press enter. You will follow the text-only prompts.  When
-          there is a colon at the bottom of the screen press the down
-          arrow to move down through the text. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
-	</li>
-      </ol>
-    </div>
-  </div>
-</div> <!-- End of 'Python' section. -->
-
 <div> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -572,44 +494,12 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
   </div>
 </div> <!-- End of 'R' section. -->
 
-<div> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Windows</h4>
-      <p>
-	Download the <a href="{{site.swc_files}}/sqlite3.exe">sqlite3
-	  program</a> and put it in the directory where you are running
-	examples.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Mac OS X</h4>
-      <p>
-	<code>sqlite3</code> comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4>Linux</h4>
-      <p>
-	<code>sqlite3</code> comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
-
+-->
 <div>
-  <h3>Virtual Machine</h3>
+  <h3>Virtual Machine</h3> <!-- Start of 'VM' section. -->
 
   <p>
     Some instructors prefer to have learners use a virtual machine (VM)
@@ -628,7 +518,8 @@ etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
     <li>
       Load the VM into VirtualBox by selecting "Import Appliance" and
       loading the <code>.ova</code> file.
+      
     </li>
   </ol>
-</div>
--->
+</div> <!-- End of 'VM' section. -->
+<div>
